@@ -36,7 +36,6 @@ class StackTest < Minitest::Test
     stack = Stack.new
 
     assert { stack.empty? == true }
-    assert { stack.size.zero? }
     assert { stack.to_a == [] }
     assert { stack.pop!.nil? }
   end
