@@ -1,6 +1,8 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class NotesFlowTest < ActionDispatch::IntegrationTest
+require 'test_helper'
+
+class BulletinsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @bulletins = bulletins(:one)
   end
@@ -12,7 +14,7 @@ class NotesFlowTest < ActionDispatch::IntegrationTest
   end
 
   test 'opens one bulletin page' do
-    note = Bulletin.create(title: "Title 1", body: "Description 1")
+    note = Bulletin.create(title: 'Title 1', body: 'Description 1')
 
     # debugger
 
