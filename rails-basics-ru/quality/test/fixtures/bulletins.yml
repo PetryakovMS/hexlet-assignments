@@ -1,0 +1,8 @@
+one:
+  title: MyString1
+  body: MyText1
+  published: 00
+two:
+  title: MyString2
+  body: MyText2
+  published: 10
