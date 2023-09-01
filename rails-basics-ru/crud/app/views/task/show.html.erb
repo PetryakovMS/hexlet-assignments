@@ -1,0 +1,9 @@
+<h1><%= @task.name %></h1>
+<p><%= @task.description %></p>
+<small>Author: <%= @task.creator %> <i><%= @task.created_at.in_time_zone('Moscow').strftime("%H:%m %d.%m.%y") %></i></small>
+<hr>
+
+<%= link_to 'Back', root_path %>
+<%= link_to 'Edit', edit_task_path(@task) %>
+
+<%= link_to 'Destroy', task_path(@task), method: :delete, data: { confirm: 'Are you sure?' } %>
