@@ -1,4 +1,4 @@
-class TaskController < ApplicationController
+class TasksController < ApplicationController
   def index
     @tasks = Task.order(created_at: :desc)
   end
@@ -60,18 +60,17 @@ class TaskController < ApplicationController
       flash[:success] = 'task was successfully deleted'
       # Выполняется новый полноценный запрос
 
-      redirect_to root_path
+      redirect_to tasks_path
     else
       flash[:failure] = 'task cannot be deleted'
       # Отрисовывается форма создания, все параметры остаются
-      redirect_to task_path(@article)
+      redirect_to root_path(@task)
     end
   end
 
   private
 
   def task_params
-    # Требуем наличия ключа :article в params. Разрешаем использовать только некоторые ключи
     params.required(:task).permit(:name, :status, :creator, :description, :completed, :performer)
   end
 end

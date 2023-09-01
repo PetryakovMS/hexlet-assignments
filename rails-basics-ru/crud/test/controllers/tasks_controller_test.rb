@@ -1,6 +1,6 @@
 require "test_helper"
 
-class TaskControllerTest < ActionDispatch::IntegrationTest
+class TasksControllerTest < ActionDispatch::IntegrationTest
 
   setup do
     @task = tasks(:one)

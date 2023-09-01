@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   root 'home#index'
   # BEGIN
-  get 'tasks', to: 'task#index'
+  # get 'tasks', to: 'task#index'
   # get 'task/show'
   # get 'task/new'
   # get 'task/create'
@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   # get 'task/update'
   # get 'task/destroy'
 
-  resources :task, only: [:show, :new, :create, :edit, :update, :destroy]
+  # resources :task, only: [:show, :new, :create, :edit, :update, :destroy]
+  resources :tasks, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   # END
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
