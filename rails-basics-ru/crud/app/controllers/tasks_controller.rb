@@ -34,13 +34,14 @@ class TasksController < ApplicationController
 
   def update
     @task = Task.find(params[:id])
+    puts  puts params
 
     if @task.update(task_params)
       # Flash сообщение
       # https://api.rubyonrails.org/classes/ActionDispatch/Flash.html
       flash[:success] = 'Task was successfully updated'
       # Выполняется новый полноценный запрос
-
+      puts @task.name
       redirect_to task_path(@task)
     else
       flash[:failure] = 'Task cannot be updated'
@@ -48,7 +49,7 @@ class TasksController < ApplicationController
       render :edit
     end
 
-    puts @task.name
+
   end
 
   def destroy

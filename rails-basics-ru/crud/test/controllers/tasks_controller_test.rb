@@ -1,7 +1,7 @@
 require "test_helper"
 
 class TasksControllerTest < ActionDispatch::IntegrationTest
-
+  self.use_transactional_tests = false
   setup do
     @task = tasks(:one)
     @attrs = {
