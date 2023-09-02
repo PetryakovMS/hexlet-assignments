@@ -7,12 +7,12 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
     @task = tasks(:one)
 
     @attrs = {
-      name: Faker::Artist.name,
-      description: Faker::Movies::HarryPotter.quote,
-      status: Faker::Movies::HarryPotter.spell,
-      creator: Faker::Movies::HarryPotter.character,
-      performer: Faker::Movies::HarryPotter.character,
-      completed: Faker::Boolean.boolean
+      name: 'test_name',
+      description: 'test_description',
+      status: 'Ok',
+      creator: 'test_curator',
+      performer: 'test_performer',
+      completed: true
     }
   end
 
