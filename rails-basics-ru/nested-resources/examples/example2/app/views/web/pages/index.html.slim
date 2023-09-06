@@ -1,0 +1,27 @@
+p#notice
+  = notice
+h1
+  | Pages
+table
+  thead
+    tr
+      th
+        | Body
+      th
+        | Book
+      th[colspan="3"]
+  tbody
+    - @pages.each do |page|
+      tr
+        td
+          = page.body
+        td
+          = page.book_id
+        td
+          = link_to 'Show', page
+        td
+          = link_to 'Edit', edit_page_path(page)
+        td
+          = link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }
+br
+= link_to 'New Page', new_page_path

@@ -1,0 +1,11 @@
+= form_with(model: @post_comment, url: post_post_comments_path) do |form|
+  = form.label :name
+  br
+  = @post_comment.errors.full_messages_for(:name).join(' ') if @post_comment.errors.present?
+  = form.text_field :title
+  br
+  = form.label :body
+  br
+  = form.text_area :body
+  .actions
+  = form.submit

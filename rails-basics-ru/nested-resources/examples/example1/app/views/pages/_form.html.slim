@@ -1,0 +1,15 @@
+= form_with(model: page, url: url) do |form|
+  - if page.errors.any?
+    #error_explanation
+      h2
+        = pluralize(page.errors.count, "error")
+        |  prohibited this page from being saved:
+      ul
+        - page.errors.each do |error|
+          li
+            = error.full_message
+  .field
+    = form.label :body
+    = form.text_area :body
+  .actions
+    = form.submit

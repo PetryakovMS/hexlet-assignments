@@ -1,0 +1,13 @@
+p#notice
+  = notice
+p
+  strong
+    | Body:
+  = @page.body
+p
+  strong
+    | Book:
+  = @page.book_id
+= link_to 'Edit', edit_page_path(@page)
+|  | 
+= link_to 'Back', book_path(@page.book)

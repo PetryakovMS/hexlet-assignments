@@ -1,0 +1,29 @@
+- content_for :title do
+  = @post_comment.title
+p
+  strong.me-2 Body:
+  = @post_comment.body
+
+h1
+  | Comments
+table
+  thead
+    tr
+      th
+        | Body
+      th[colspan="3"]
+  tbody
+    - @post_comment.each do |comment|
+      tr
+        td
+          = comment.body
+        td
+          = link_to 'Edit', post_post_comment_path(comment)
+        td
+          = link_to 'Destroy', post_post_comment_path(@post_comment), method: :delete, data: { confirm: 'Are you sure?' }
+br
+hr
+
+.d-flex
+  = link_to 'Edit', edit_post_path(@post_comment), class: 'btn btn-outline-primary me-2'
+  = link_to 'Back', :back, class: 'btn btn-outline-primary'
