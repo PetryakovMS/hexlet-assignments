@@ -1,0 +1,20 @@
+ru:
+  show: Просмотр
+  edit: Редактирование
+  destroy: Удаление
+  destroy_confirmation: вы уверены?
+  back: Назад
+  layouts:
+    shared:
+      nav:
+        home: Домой
+        posts: Посты
+    application:
+      hexlet_title: "© Хекслет %{year}"
+  home:
+    index:
+      title: Домашняя страница
+  errors:
+    messages:
+      blank: "Название Должно быть заполнено"
+

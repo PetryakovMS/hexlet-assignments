@@ -1,0 +1,4 @@
+= simple_form_for @post do |f|
+  = f.input :title, placeholder: t('.placeholder_title'), error: t('errors.messages.blank')
+  = f.input :body
+  = f.submit t('.create'), :class => 'btn-success'

@@ -1,0 +1,37 @@
+en:
+  posts:
+    # BEGIN
+    index:
+      posts: Posts
+      empty_post_comment:
+        zero: "No comments"
+        one: "%{count} comment"
+        two: "%{count} comments"
+        other: "%{count} comments"
+      view: просмотр
+      edit: изменение
+      destroy: удаление
+      new: New Post
+    new:
+      new: New Post
+    form:
+      create: Create Post
+      placeholder_title: Enter post title
+    create:
+      success: Post was created.
+    update:
+      success: Post was updated.
+    destroy:
+      success: Post was destroyed.
+    # END
+
+    comments:
+      edit:
+        title: Editing comment
+
+      create:
+        success: Comment was created.
+
+      update:
+        success: Comment was updated.
+

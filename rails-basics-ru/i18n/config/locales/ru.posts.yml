@@ -1,0 +1,45 @@
+---
+ru:
+  posts:
+    # BEGIN
+    index:
+      posts: Посты
+      empty_post_comment:
+        zero: "нет комментариев"
+        one: "%{count} комментарий"
+        two: "%{count} комментария"
+        other: "%{count} комментариеы"
+      view: просмотр
+      edit: изменение
+      destroy: удаление
+      new: Новый пост
+    new:
+      new: Новый пост
+    form:
+      create: Создать Пост
+      placeholder_title: Название
+    create:
+      success: Пост создан.
+    update:
+      success: Пост обновлен.
+    destroy:
+      success: Пост удален.
+    # END
+
+    comments:
+      edit:
+        title: Изменить комментарий
+
+      create:
+        success: Комментарий создан.
+
+      update:
+        success: Комментарий обновлен.
+
+
+
+#      нет комментариев
+#      1 комментарий
+#      2 комментария
+#      10 комментариев
+
