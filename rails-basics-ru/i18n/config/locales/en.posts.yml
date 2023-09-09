@@ -8,6 +8,8 @@ en:
         one: "%{count} comment"
         two: "%{count} comments"
         other: "%{count} comments"
+        few: "%{count} comment"
+        many: "%{count} comments"
       view: просмотр
       edit: изменение
       destroy: удаление

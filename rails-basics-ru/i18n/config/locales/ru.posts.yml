@@ -8,7 +8,9 @@ ru:
         zero: "нет комментариев"
         one: "%{count} комментарий"
         two: "%{count} комментария"
-        other: "%{count} комментариеы"
+        other: "%{count} комментариев"
+        few: "%{count} комментария"
+        many: "%{count} комментариев"
       view: просмотр
       edit: изменение
       destroy: удаление

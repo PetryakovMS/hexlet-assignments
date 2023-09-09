@@ -2,20 +2,13 @@ en:
   activerecord:
     models:
       # BEGIN
-      
+
       # END
       post/comment: Comment
     attributes:
       # BEGIN
-      
+
       # END
       post/comment:
         body: Body
 
-    errors:
-      models:
-        post:
-          attributes:
-            # BEGIN
-            
-            # END

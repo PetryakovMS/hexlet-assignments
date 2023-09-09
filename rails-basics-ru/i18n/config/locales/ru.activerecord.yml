@@ -7,17 +7,6 @@ ru:
       post/comment: Комментарий
 
     attributes:
-      post:
-        # BEGIN
-        
-        # END
+
       post/comment:
         body: Содержание
-
-    errors:
-      models:
-        post:
-          attributes:
-            # BEGIN
-
-            # END
